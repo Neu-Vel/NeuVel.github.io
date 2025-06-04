@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #031114;
+    background: linear-gradient(90deg, rgba(3, 17, 20, 1) 0%, rgba(76, 15, 168, 1) 27%, rgba(26, 45, 196, 1) 45%, rgba(34, 37, 102, 1) 56%, rgba(35, 35, 74, 1) 64%, rgba(26, 2, 97, 1) 76%, rgba(110, 14, 173, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #1bd17c;
+    background: linear-gradient(260deg, rgba(27, 209, 124, 1) 22%, rgba(19, 194, 19, 1) 78%);   
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17a663;
+    background: linear-gradient(260deg, rgba(23, 166, 99, 1) 22%, rgba(17, 143, 17, 1) 78%);
+}
+
+#taskList {
+    list-style: none;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-item .delete-btn {
+    background: #b81111;
+    background: linear-gradient(90deg, rgba(184, 17, 17, 1) 22%, rgba(158, 47, 99, 1) 78%);
+}
+
+.task-item .delete-btn:hover {
+    background: #780c0c;
+    background: linear-gradient(90deg, rgba(120, 12, 12, 1) 22%, rgba(79, 21, 50, 1) 78%);
+}
+
+.task-item .toggle-btn {
+    background: #1673c4;
+    background: linear-gradient(260deg, rgba(22, 115, 196, 1) 22%, rgba(34, 98, 138, 1) 78%);
+    margin-right: 10px;
+}
+
+.task-item .toggle-btn:hover {
+    background: #0d4b82;
+    background: linear-gradient(260deg, rgba(13, 75, 130, 1) 22%, rgba(32, 72, 105, 1) 78%);
+}
